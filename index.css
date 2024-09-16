@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color:white;
+}
+
+.centered {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #fff;
+    color: #555;
+}
+
+.card-body p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.col1, .col2 {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col1 {
+    background-color: aqua;
+}
+
+.col2 {
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .col1, .col2 {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .col2 {
+        margin-top: 10px;
+       
+    }
+
+    .btn-con, .btn-1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col1, .col2 {
+        padding: 5px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .btn, .btn-con, .btn-1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+#resume-temp{
+    display: none;
+ }
+ .col-1{
+    background-color: aqua;
+ }

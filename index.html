@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="form">
+        <div class="col1">
+            <h2><b>Personal Information</b></h2>
+            <label for="username">User Name</label><br>
+            <input type="text" id="username" placeholder="Enter Here"><br><br>
+            <label for="nameField">Your Name</label><br>
+            <input type="text" id="nameField" class="nameField" placeholder="Enter Here"><br><br>
+
+            <label for="contactField">Your Contact</label><br>
+            <input type="tel" id="contactField" class="contactField" placeholder="Enter Here"><br><br>
+
+            <label for="emailField">Your Email</label><br>
+            <input type="email" id="emailField" class="emailField" placeholder="Enter Here"><br><br>
+
+            <label for="addressField">Address</label><br>
+            <textarea id="addressField" class="addressField" rows="7" placeholder="Enter Here"></textarea>
+        </div>
+
+        <div class="col2">
+            <h2><b>Professional Information</b></h2>
+            <label for="objectiveField">Objective</label><br>
+            <textarea id="objectiveField" rows="5" placeholder="Enter Here"></textarea><br><br>
+            <div id="we">
+                <label for="workExperienceField">Work Experience</label><br>
+                <textarea id="workExperienceField" rows="3" placeholder="Enter Here"></textarea><br><br>
+               <button class="btn" onclick="addWorkExperience()">Add Work Experience</button><br><br>  
+            </div>
+            <div id="wefield1">
+                <label for="academicQualificationsField">Academic Qualifications</label><br>
+                <textarea id="academicQualificationsField" rows="2" placeholder="Enter Here"></textarea><br><br>
+                <button class="btn" onclick="addAcademicQualification()">Add Academic Qualification</button> 
+            </div>
+        </div>
+
+        <center>
+            <div class="con">
+                <button class="btn-con" onclick="generateResume()">Generate Resume</button>
+            </div>
+        </center>
+    </div>
+
+    <div class="container" id="resume-temp">
+        <div class="row">
+            <div class="col-1">
+                <center>
+                    <div class="myimg"><img src="./d.png" alt="Profile Image"></div>
+                    <div>
+                        <p id="resumeName">Hanzala Rehman</p>
+                        <p id="resumeContact">+92313283213, +923333085</p>
+                        <p id="resumeEmail">hanzalarehman24@gmail.com</p>
+                        <p id="resumeAddress">b2/97 extension Gulshan-e-hadeed Karachi, Pakistan</p>
+                        <hr/>
+                    </div>
+                </center>
+            </div>
+            <div class="col-2">
+                <h1 id="resumeNameHeading"><b>Hanzala Rehman</b></h1>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="resumeObjective"> "To leverage expertise in software development to design, build, and maintain high-quality applications, while continuously improving code efficiency and implementing best practices. Aiming to contribute to innovative projects, solve complex problems, and collaborate effectively with cross-functional teams to drive technological advancements and achieve project goals."</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="resumeWorkExperience">
+                            <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+                            <li>Collaborated with cross-functional teams to design and implement new features.</li>
+                            <li>Assisted in debugging and optimizing code to enhance application performance.</li>
+                            <li>Participated in code reviews and contributed to best practice discussions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Academic Qualifications</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="resumeAcademicQualifications">
+                            <li><strong>Matriculation in Computer Science</strong>: Embellish School System<br>Graduated: 2020</li>
+                            <li><strong>Intermediate Education</strong>: Islamia College<br>Graduated: 2023</li>
+                            <li><strong>CS50: Introduction to Computer Science</strong>: Harvard University<br>Completed: 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <div class="containeroo">
+                <button class="btn-1" onclick="printResume()">Print</button>
+            </div>
+            <div id="shareable-link" style="display:block">
+                <h2>Shareable Unique Link</h2>
+                <a href="#" id="share-link" target="_blank">Share</a>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
+
